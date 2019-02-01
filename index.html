@@ -88,15 +88,42 @@
           </ul>
         </section>
 
-        <section class="booking">
-          <div class="booking-title">
+        <section class="search-hotel">
+          <div class="search-title">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
 
           <a href="#" class="popup-button">Поиск гостиницы в Седоне</a>
-
-          <!---Здесь будет форма--->
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label>
+                Дата заезда:
+                <input type="text" name="date-in" class="search-date" placeholder="27 апреля 2017">
+              </label>
+            </p>
+            <p>
+              <label>
+                Дата выезда:
+                <input type="text" name="date-out" class="search-date" placeholder="4 июля 2017">
+              </label>
+            </p>
+            <div class="search-people-amount">
+              <p>
+                <label>
+                  Взрослые:
+                  <input type="number" name="adults-amount" value="2">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Дети:
+                  <input type="number" name="children-amount" value="0">
+                </label>
+              </p>
+            </div>
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
 
         </section>
 

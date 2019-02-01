@@ -24,7 +24,71 @@
         <h1 class="visually-hidden">Гостиницы</h1>
         <section class="filter">
           <h2 class="visually-hidden">Параметры поиска</h2>
-          <!---Здесь будет форма--->
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="pool" class="filter-checkbox" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="parking" class="filter-checkbox">
+                    Парковка
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="wifi" class="filter-checkbox">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="hotel" class="filter-checkbox" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="motel" class="filter-checkbox" checked>
+                    Мотель
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label>
+                    <input type="checkbox" name="apartments" class="filter-checkbox" checked>
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price">
+                <input type="text" name="min-price" placeholder="от 0">
+                <input type="text" name="max-price" placeholder="до 3000">
+              </div>
+
+              <div class="slider">
+                <div class="slider-bar">
+                  <div class="slider-min-price"></div>
+                  <div class="slider-max-price"></div>
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="filter-btn">Показать</button>
+          </form>
         </section>
 
         <section class="content">

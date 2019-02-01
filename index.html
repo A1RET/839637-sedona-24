@@ -98,20 +98,21 @@
 
           <a href="#" class="popup-button">Поиск гостиницы в Седоне</a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <div>
+            <div class="search-date">
               <label for="date-in">Дата заезда:</label>
               <input type="text" name="date-in" id="date-in" class="search-date" placeholder="27 апреля 2017">
               <button type="button" class="search-calendar">Показать календарь</button>
             </div>
-            <div>
+            <div class="search-date">
               <label for="date-out">Дата выезда:</label>
               <input type="text" name="date-out" id="date-out" class="search-date" placeholder="4 июля 2017">
               <button type="button" class="search-calendar">Показать календарь</button>
             </div>
-            <div class="search-people-amount">
+
+            <div class="search-people-container">
               <div>
                 <label for="adults-amount">Взрослые:</label>
-                <div>
+                <div class="search-people-amount>
                   <button type="button" class="amount-btn">-</button>
                   <input type="text" name="adults-amount" id="adults-amount" value="2">
                   <button type="button" class="amount-btn">+</button>
@@ -119,13 +120,14 @@
               </div>
               <div>
                 <label for="children-amount">Дети:</label>
-                <div>
+                <div class="search-people-amount>
                   <button type="button" class="amount-btn">-</button>
                   <input type="text" name="children-amount" id="children-amount" value="0">
                   <button type="button" class="amount-btn">+</button>
                 </div>
               </div>
             </div>
+
             <button class="search-btn" type="submit">Найти</button>
           </form>
 

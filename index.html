@@ -100,22 +100,30 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <div>
               <label for="date-in">Дата заезда:</label>
-                <input type="text" name="date-in" id="date-in" class="search-date" placeholder="27 апреля 2017">
-                <button type="button" class="search-calendar">Показать календарь</button>
+              <input type="text" name="date-in" id="date-in" class="search-date" placeholder="27 апреля 2017">
+              <button type="button" class="search-calendar">Показать календарь</button>
             </div>
             <div>
               <label for="date-out">Дата выезда:</label>
-                <input type="text" name="date-out" id="date-out" class="search-date" placeholder="4 июля 2017">
-                <button type="button" class="search-calendar">Показать календарь</button>
+              <input type="text" name="date-out" id="date-out" class="search-date" placeholder="4 июля 2017">
+              <button type="button" class="search-calendar">Показать календарь</button>
             </div>
             <div class="search-people-amount">
               <div>
                 <label for="adults-amount">Взрослые:</label>
+                <div>
+                  <button type="button" class="amount-btn">-</button>
                   <input type="text" name="adults-amount" id="adults-amount" value="2">
+                  <button type="button" class="amount-btn">+</button>
+                </div>
               </div>
               <div>
                 <label for="children-amount">Дети:</label>
+                <div>
+                  <button type="button" class="amount-btn">-</button>
                   <input type="text" name="children-amount" id="children-amount" value="0">
+                  <button type="button" class="amount-btn">+</button>
+                </div>
               </div>
             </div>
             <button class="search-btn" type="submit">Найти</button>

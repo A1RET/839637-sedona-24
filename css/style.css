@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow:0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  background-color: #fff;
+}
+
+
+/*------------Header-------------*/
+
+
+.main-navigation {
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .active-page {
+  color: #766357;
+}
+
+
+/*----------Footer-------------*/
+
+
+.main-footer {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer-sm ul {
+  list-style: none;
+}
+
+
+/*--------index.html---------*/
+
+
+.welcome {
+  background-color: #e3f0f8;
+  background-image: url("../img/background_photo.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.description {
+  background-color: #fff;
+  text-align: center;
+}
+
+.description-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.description-text {
+  color: #333333;
+}
+
+.reasons-list,
+.town-features {
+  list-style: none;
+  padding: 0;
+}
+
+.reasons-list {
+  line-height: 21px;
+  background-color: #eeeeee;
+}
+
+.reasons-list h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reason,
+.town-feature {
+  text-align: center;
+}
+
+.reason p,
+.town-feature p {
+  color: #333333;
+}
+
+.reason-big {
+  background-color: #81b3d2;
+}
+
+.reason-big h3,
+.reason-big p {
+  color: #ffffff;
+}
+
+.town-features {
+  background-color: #ffffff;
+}
+
+.search-title {
+  background-color: #fff;
+  text-align: center;
+}
+
+.search-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.search-title p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popup-button {
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #766357;
+  text-align: center;
+}
+
+.popup-button:hover,
+.popup-button:focus {
+  background-color: #604e43;
+}
+
+.popup-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-form {
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  text-align: center;
+}
+
+.search-form input {
+  font: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border:2px solid #f2f2f2;
+}
+
+.search-form input:hover,
+.search-form input:focus {
+  background-color: #ebebeb;
+  border-color:#f2f2f2;
+
+
+}
+
+.search-form input:focus {
+  background-color: transparent;
+  border-color: #e5e5e5;
+}
+
+.amount-btn {
+  font: inherit;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.amount-btn:hover,
+.amount-btn:focus{
+  color: #000;
+}
+
+.amount-btn:active {
+  color:#81b3d2;
+}
+
+.search-btn {
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #669ec0;
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+
+/*-----------Hotels.html------------*/
+
+
+.filter {
+  line-height: 21px;
+  color: #fff;
+  background-image: url("../img/mountain_blur.jpg");
+  background-repeat: no-repeat;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-form ul {
+  list-style: none;
+}
+
+.price input {
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.filter-btn {
+  text-transform: uppercase;
+  line-height: 21px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.results-sort {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.results-amount {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.sort-parameters {
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.sort-parameter {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-parameter:hover,
+.sort-parameter:focus {
+  color: #81b3d2;
+}
+
+.sort-parameter:active {
+  color: #000;
+  border:none;
+}
+
+.sort-parameter-active {
+  color: #81b3d2;
+  border: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.hotels-list {
+  list-style: none;
+  line-height: 21px;
+  padding: 0;
+}
+
+.list-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.list-item-name {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+}
+
+.list-item-name:hover,
+.list-item-name:focus {
+  color: #81b3d2;
+}
+
+.list-item-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.list-item-buttons a {
+  color: #fff;
+  font-weight: bold; 
+}
+
+.list-item-buttons .more {
+  background-color: #81b3d2;
+}
+
+.list-item-buttons .more:hover,
+.list-item-buttons .more:focus {
+  background-color: #669ec0;
+}
+
+.list-item-buttons .more:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.list-item-buttons .book {
+  background-color: #766357;
+}
+
+.list-item-buttons .book:hover,
+.list-item-buttons .book:focus {
+  background-color: #604e43;
+}
+
+.list-item-buttons .book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.rating-text {
+  background-color: #f2f2f2;
+}

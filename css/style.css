@@ -120,6 +120,13 @@ a {
   line-height: 0;
 }
 
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active path {
+  fill:#bdbbbc;
 }
 
 

@@ -43,7 +43,10 @@ a {
 }
 
 .site-navigation {
+  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-navigation a {
@@ -68,17 +71,55 @@ a {
 
 
 .main-footer {
+  display: flex;
+  align-items: center;
+  padding: 36px 0;
   color: #000;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag {
+  width: 240px;
   font-size: 21px;
   font-weight: bold;
+  text-align: center;
+  margin-left: 80px;
 }
 
 .footer-sm ul {
+  display: flex;
+  justify-content: center;
+  width: 400px;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left:80px;
+}
+
+.sm-button {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: #81b3d2;
+}
+
+.sm-button {
+  margin-right: 5px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  margin-left: 80px;
+}
+
+.copyright-logo {
+  margin-left:8px;
+  line-height: 0;
+}
+
 }
 
 
@@ -86,24 +127,35 @@ a {
 
 
 .welcome {
+  display: flex;
+  justify-content: center;
   background-color: #e3f0f8;
   background-image: url("../img/background_photo.jpg");
   background-repeat: no-repeat;
-  text-align: center;
+  background-position:0 -56px;
+  padding-top: 75px;
+  padding-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
-  text-align: center;
 }
 
 .description-title {
   font-size: 21px;
-  font-weight: bold;
+  width: 440px;
+  text-align: center;
+  margin:0;
+  margin-bottom: 10px;
 }
 
 .description-text {
   color: #333333;
+  margin-bottom: 30px;
 }
 
 .reasons-list,
@@ -146,27 +198,38 @@ a {
 }
 
 .search-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
+}
+
+.search-description {
+  width: 435px;
   text-align: center;
 }
 
-.search-title h2 {
+.search-description h2 {
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
 }
 
-.search-title p {
+.search-description p {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 45px;
 }
 
 .popup-button {
   font-size: 21px;
   font-weight: bold;
   color: #fff;
+  width: 568px;
   background-color: #766357;
   text-align: center;
+  padding-top: 32px;
+  padding-bottom: 30px;
 }
 
 .popup-button:hover,
@@ -327,13 +390,35 @@ a {
 }
 
 .hotels-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   line-height: 21px;
   padding: 0;
+  margin: 0;
 }
 
 .list-item {
+  display: flex;
+  padding: 25px 72px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.list-item-image {
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.list-item-info {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 270px;
+}
+
+
+.list-item-info h3 {
+  margin: 0;
 }
 
 .list-item-name {
@@ -351,13 +436,32 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.item-price {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.item-price .type {
+  width: 110px;
+  margin-right: 6px;
+}
+
+.list-item-buttons {
+  display: flex;
+}
+
 .list-item-buttons a {
   color: #fff;
-  font-weight: bold; 
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .list-item-buttons .more {
+  width: 110px;
+  text-align: center;
   background-color: #81b3d2;
+  margin-right: 6px;
 }
 
 .list-item-buttons .more:hover,
@@ -371,6 +475,8 @@ a {
 }
 
 .list-item-buttons .book {
+  width: 142px;
+  text-align: center;
   background-color: #766357;
 }
 
@@ -384,6 +490,18 @@ a {
   background-color: #503e33;
 }
 
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
 .rating-text {
+  width: 110px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   background-color: #f2f2f2;
 }

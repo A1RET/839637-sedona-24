@@ -44,9 +44,18 @@ a {
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding:22px 72px;
   margin: 0;
+}
+
+.site-navigation li {
+  width: 239px;
+}
+
+.site-navigation-right {
+  text-align: right;
 }
 
 .site-navigation a {

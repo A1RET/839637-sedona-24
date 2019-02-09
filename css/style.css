@@ -124,7 +124,8 @@ a {
   background-color: #5496bd;
 }
 
-.sm-button:active  path {
+.sm-button:active  path,
+.sm-button path:active {
   opacity: 0.3;
 }
 
@@ -141,12 +142,12 @@ a {
   line-height: 0;
 }
 
-.copyright-logo:hover path,
-.copyright-logo:focus path {
+.copyright-logo path:hover,
+.copyright-logo path:focus {
   fill: #81b3d2;
 }
 
-.copyright-logo:active path {
+.copyright-logo path:active {
   fill:#bdbbbc;
 }
 

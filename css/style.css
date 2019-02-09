@@ -97,14 +97,30 @@ a {
 }
 
 .sm-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   margin-right: 6px;
   background-color: #81b3d2;
 }
 
-.sm-button {
-  margin-right: 5px;
+.sm-button a {
+  line-height: 0;
+}
+
+.sm-button:hover,
+.sm-button:focus {
+  background-color: #669ec0;
+}
+
+.sm-button:active {
+  background-color: #5496bd;
+}
+
+.sm-button:active  path {
+  opacity: 0.3;
 }
 
 .footer-copyright {

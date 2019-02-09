@@ -115,10 +115,6 @@ a {
   background-color: #81b3d2;
 }
 
-.sm-button a {
-  line-height: 0;
-}
-
 .sm-button:hover,
 .sm-button:focus {
   background-color: #669ec0;

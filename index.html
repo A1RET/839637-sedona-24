@@ -70,7 +70,7 @@
                 <img src="img/mountain.jpg" width="800" height="256" alt="Фото гор">
               </div>
               <div class="reason">
-                <h3>Там есть Мост дьявола</h3>
+                <h3>Там есть<br> Мост дьявола</h3>
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
@@ -106,27 +106,27 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="search-date">
               <label for="date-in">Дата заезда:</label>
-              <input type="text" name="date-in" id="date-in" class="search-date" placeholder="27 апреля 2017">
+              <input class="date-field" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
               <button type="button" class="search-calendar">Показать календарь</button>
             </div>
             <div class="search-date">
               <label for="date-out">Дата выезда:</label>
-              <input type="text" name="date-out" id="date-out" class="search-date" placeholder="4 июля 2017">
+              <input class="date-field" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
               <button type="button" class="search-calendar">Показать календарь</button>
             </div>
 
             <div class="search-people-container">
-              <div>
+              <div  class="search-people-amount">
                 <label for="adults-amount">Взрослые:</label>
-                <div class="search-people-amount">
+                <div class="adults-amount">
                   <button type="button" class="amount-btn">-</button>
                   <input type="text" name="adults-amount" id="adults-amount" value="2">
                   <button type="button" class="amount-btn">+</button>
                 </div>
               </div>
-              <div>
+              <div  class="search-people-amount">
                 <label for="children-amount">Дети:</label>
-                <div class="search-people-amount">
+                <div class="children-amount">
                   <button type="button" class="amount-btn">-</button>
                   <input type="text" name="children-amount" id="children-amount" value="0">
                   <button type="button" class="amount-btn">+</button>
@@ -144,7 +144,7 @@
         </div>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer index-footer">
         <div class="footer-hashtag">
           #Visitsedona
         </div>

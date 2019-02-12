@@ -51,14 +51,17 @@ a {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  padding:15px 72px;
+  padding:15px 72px 16px;
   margin: 0;
 }
 
 .site-navigation li {
   width: 239px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
 }
 
 .site-navigation-right {
@@ -431,14 +434,30 @@ a {
 
 
 .filter {
+  display: flex;
   line-height: 21px;
   color: #fff;
   background-image: url("../img/mountain_blur.jpg");
   background-repeat: no-repeat;
+  background-position:0 -56px;
+}
+
+.filter-form {
+  display: flex;
+  width: 100%;
+  padding: 27px 72px 32px;
 }
 
 .filter-form fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 120px; 
+}
+
+.filter-form fieldset:nth-child(3) {
+  margin:0;
+  margin-left: auto;
 }
 
 .filter-form legend {
@@ -446,22 +465,39 @@ a {
   font-weight: bold;
 }
 
+.filter-item {
+  margin-top: 25px;
+  padding-left: 22px;
+}
+
 .filter-form ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .price input {
   text-transform: uppercase;
   line-height: 21px;
   color: #fff;
+  height: 30px;
+  margin-top:10px;
+  margin-bottom: 20px;
   background-color: transparent;
   text-align: center;
   border: 2px solid #fff;
 }
 
+.slider {
+  margin-bottom: 34px;
+}
+
 .filter-btn {
+  display: block;
   text-transform: uppercase;
   line-height: 21px;
+  padding: 6px 35px;
+  margin:0 auto;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
@@ -474,6 +510,9 @@ a {
 }
 
 .results-sort {
+  display: flex;
+  align-items: center;
+  padding:29px 72px;
   border-bottom: 1px solid #e5e5e5;
   font-size: 12px;
   line-height: 18px;
@@ -483,14 +522,23 @@ a {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+  margin-right: 48px;
+}
+
+.sort-title {
+  margin-right: 40px;
 }
 
 .sort-parameters {
+  display: flex;
   list-style: none;
+  margin:0;
+  padding: 0;
 }
 
 .sort-parameter {
   color: rgba(0, 0, 0, 0.3);
+  margin-right: 33px;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -509,6 +557,10 @@ a {
   border: none;
   pointer-events: none;
   cursor: default;
+}
+
+.sort-buttons {
+  margin-left: auto;
 }
 
 .hotels-list {

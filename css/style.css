@@ -45,6 +45,7 @@ a {
 
 .main-header-logo {
   position: absolute;
+  z-index: 5;
   left: 50%;
   margin-left: -70px;
 }
@@ -157,12 +158,12 @@ a {
   line-height: 0;
 }
 
-.copyright-logo path:hover,
-.copyright-logo path:focus {
+.copyright-logo:hover path,
+.copyright-logo:focus path {
   fill: #81b3d2;
 }
 
-.copyright-logo path:active {
+.copyright-logo:active path {
   fill:#bdbbbc;
 }
 
@@ -172,6 +173,7 @@ a {
 
 .welcome {
   display: flex;
+  position: relative;
   justify-content: center;
   background-color: #e3f0f8;
   background-image: url("../img/background_photo.jpg");
@@ -180,6 +182,16 @@ a {
   padding-top: 75px;
   padding-bottom: 80px;
   margin-bottom: 50px;
+}
+
+.welcome::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
 }
 
 .description {
@@ -261,7 +273,41 @@ a {
 }
 
 .town-feature {
+  position: relative;
   padding-top: 160px;
+}
+
+.town-feature-housing::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 75px;
+  height: 72px;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+}
+
+.town-feature-food::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 74px;
+  height: 70px;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+}
+
+.town-feature-souvenir::before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  width: 64px;
+  height: 76px;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
 }
 
 .search-hotel {
@@ -341,6 +387,7 @@ a {
   padding:0 14px;
   background-color: #f2f2f2;
   border:2px solid #f2f2f2;
+  outline: none;
 }
 
 .search-form input:hover,
@@ -355,10 +402,36 @@ a {
 }
 
 .search-date {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.search-date input {
+  min-width: 346px;
+}
+
+.search-calendar{
+  position: absolute;
+  right: 9px;
+  width:21px; 
+  height:22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-calendar:hover path,
+.search-calendar:focus path{
+  fill:#000000;
+}
+
+.search-calendar:active path {
+  fill: #81b3d2;
 }
 
 .search-people-container,
@@ -395,9 +468,13 @@ a {
 
 .amount-btn {
   font: inherit;
+  font-size: 26px;
+  font-weight: bold;
   color: #a9a9a9;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .amount-btn:hover,
@@ -417,6 +494,7 @@ a {
   background-color: #81b3d2;
   border: none;
   height: 58px;
+  cursor: pointer;
 }
 
 .search-btn:hover,

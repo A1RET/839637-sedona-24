@@ -750,6 +750,7 @@ a {
 
   background-color: transparent;
   border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .filter-btn:hover,

@@ -66,20 +66,18 @@
 
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
-              <div class="price-container">
-              <div class="price">
-                <input type="text" name="min-price" value="от 0">
-                <input type="text" name="max-price" value="до 3000">
+              <div class="filter-price">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
 
               <div class="slider">
                 <div class="slider-bar">
-                  <div class="slider-min-price"></div>
-                  <div class="slider-max-price"></div>
+                  <div class="slider-toggle slider-min-price"></div>
+                  <div class="slider-toggle slider-max-price"></div>
                 </div>
               </div>
               <button type="submit" class="filter-btn">Показать</button>
-              </div>
             </fieldset>
           </form>
         </section>
@@ -97,8 +95,14 @@
             </ul>
 
             <div class="sort-buttons">
-              <button class="sort-btn sort-btn-asc" type="button">По возрастанию</button>
-              <button class="sort-btn sort-btn-desc" type="button">По убыванию</button>
+              <button class="sort-btn" type="button">
+                <span class="visually-hidden">По возрастанию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="rgba(0, 0, 0, 0.3)" d="M5.5 0L0 10h11z"/></svg>
+              </button>
+              <button class="sort-btn sort-btn-active" type="button">
+                <span class="visually-hidden">По убыванию</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="rgba(0, 0, 0, 0.3)" d="M5.5 10L0 0h11"/></svg>
+              </button>
             </div>
           </div>
 
@@ -126,10 +130,10 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
-                  <span>*</span>
-                  <span>*</span>
-                  <span>*</span>
-                    <span>*</span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
                 <div class="rating-text">Рейтинг: 8,5</div>
               </div>
@@ -158,9 +162,9 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
-                  <span>*</span>
-                  <span>*</span>
-                  <span>*</span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
                 <div class="rating-text">Рейтинг: 8,9</div>
               </div>
@@ -190,8 +194,8 @@
               </div>
               <div class="rating">
                 <div class="rating-stars">
-                  <span>*</span>
-                  <span>*</span>
+                  <span></span>
+                  <span></span>
                 </div>
                 <div class="rating-text">Рейтинг: 9,2</div>
               </div>

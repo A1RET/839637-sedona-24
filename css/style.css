@@ -429,6 +429,10 @@ a {
   background-color: #5496bd;
 }
 
+.map {
+  display: flex;
+}
+
 
 /*-----------Hotels.html------------*/
 

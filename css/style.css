@@ -381,13 +381,9 @@ a {
   align-items: center;
   padding-top: 25px;
 
-  background-color: #ffffff;
-}
-
-.search-description {
-  width: 435px;
-
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .search-description h2 {

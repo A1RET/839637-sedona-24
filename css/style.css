@@ -477,9 +477,12 @@ a {
   position: relative;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.search-date label {
+  margin-right: auto;
 }
 
 .search-date input {
@@ -523,11 +526,14 @@ a {
 
 .search-people-amount {
   flex-basis: 50%;
-  justify-content: flex-end;
 }
 
 .adults-amount {
   margin: 0 3px 0 auto;
+}
+
+.children-title {
+  margin-left: auto;
 }
 
 .children-amount {

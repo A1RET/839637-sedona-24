@@ -642,6 +642,10 @@ a {
   background: url("../img/checkbox-on.svg") no-repeat center;
 }
 
+.filter-checkbox:disabled + label::before {
+  opacity: 0.3;
+}
+
 .filter-price {
   position: relative;
 

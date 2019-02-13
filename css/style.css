@@ -134,15 +134,32 @@ a {
   list-style: none;
 }
 
-.sm-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-sm li {
   width: 46px;
   height: 48px;
   margin-right: 6px;
 
-  background-color: #81b3d2;
+  background: #669ec0;
+}
+
+.sm-button {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+
+  background: #81b3d2 no-repeat 50% 50%;
+}
+
+.sm-tw {
+  background-image: url(../img/t-icon.svg);
+}
+
+.sm-fb {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.sm-yt {
+  background-image: url(../img/youtube-icon.svg);
 }
 
 .sm-button:hover,
@@ -152,10 +169,6 @@ a {
 
 .sm-button:active {
   background-color: #5496bd;
-}
-
-.sm-button:active  path,
-.sm-button path:active {
   opacity: 0.3;
 }
 
@@ -168,18 +181,23 @@ a {
 }
 
 .copyright-logo {
+  display: inline-block;
+  width: 115px;
+  height: 41px;
   margin-left: 8px;
 
   line-height: 0;
+
+  background: url("../img/HTML-Academy-sprite.png") no-repeat 0 0;
 }
 
-.copyright-logo:hover path,
-.copyright-logo:focus path {
-  fill: #81b3d2;
+.copyright-logo:hover,
+.copyright-logo:focus {
+  background-position: 0 -82px;
 }
 
-.copyright-logo:active path {
-  fill: #bdbbbc;
+.copyright-logo:active {
+  background-position: 0 -41px;
 }
 
 
@@ -470,19 +488,19 @@ a {
   height: 22px;
   padding: 0;
 
-  background: transparent;
+  background: url("../img/sprite-calendar.png") no-repeat 0 0;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.search-calendar:hover path,
-.search-calendar:focus path {
-  fill: #000000;
+.search-calendar:hover,
+.search-calendar:focus {
+  background-position: 0 -44px;
 }
 
-.search-calendar:active path {
-  fill: #81b3d2;
+.search-calendar:active {
+  background-position: 0 -22px;
 }
 
 .search-people-container,

@@ -61,7 +61,7 @@ a {
 .site-navigation {
   display: flex;
   margin: 0;
-  padding: 15px 72px 16px;
+  padding: 14px 72px 14px;
 
   list-style: none;
 }
@@ -209,9 +209,9 @@ a {
 
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 58px;
   padding-top: 75px;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
 
   background-color: #e3f0f8;
   background-image: url("../img/background_photo.jpg");
@@ -357,7 +357,7 @@ a {
 .town-feature-souvenir::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 55px;
   left: 50%;
 
   width: 64px;
@@ -393,7 +393,7 @@ a {
 }
 
 .search-description p {
-  margin-bottom: 45px;
+  margin-bottom: 47px;
 
   font-size: 14px;
   line-height: 24px;
@@ -711,8 +711,8 @@ a {
 
 .filter-price .min-price,
 .filter-price .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 92px;
+  padding-left: 64px;
 }
 
 .filter-price input {
@@ -794,7 +794,7 @@ a {
 .results-sort {
   display: flex;
   align-items: center;
-  padding: 29px 72px;
+  padding: 30px 72px;
 
   font-size: 12px;
   line-height: 18px;

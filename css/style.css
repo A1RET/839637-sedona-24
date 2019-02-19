@@ -651,12 +651,15 @@ a {
 }
 
 .map {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .map iframe {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 

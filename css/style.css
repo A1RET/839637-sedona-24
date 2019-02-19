@@ -659,6 +659,10 @@ a {
   background: url("../img/checkbox-off.svg") no-repeat center;
 }
 
+.filter-checkbox:focus + label::before {
+  box-shadow: 0 0 0 2px #81B3D2;
+}
+
 .filter-checkbox:checked + label::before {
   width: 27px;
   height: 23px;

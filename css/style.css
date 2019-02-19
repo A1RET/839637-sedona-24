@@ -418,6 +418,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 50%;
+  z-index: 1;
   /*display: none;*/
 
   display: flex;
@@ -584,6 +585,9 @@ a {
 
 .map {
   display: flex;
+}
+.map iframe {
+  position: absolute;
 }
 
 

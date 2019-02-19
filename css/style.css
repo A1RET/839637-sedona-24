@@ -327,45 +327,37 @@ a {
 }
 
 .town-feature-housing::before {
+.town-feature[class*="town-feature-"]::before{
   content: "";
   position: absolute;
   top: 60px;
   left: 50%;
 
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+
+.town-feature-housing::before {
   width: 75px;
   height: 72px;
 
   background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
-  transform: translateX(-50%);
 }
 
 .town-feature-food::before {
-  content: "";
-  position: absolute;
-  top: 60px;
-  left: 50%;
-
   width: 74px;
   height: 70px;
 
   background-image: url("../img/icon-food.svg");
-  background-repeat: no-repeat;
-  transform: translateX(-50%);
 }
 
 .town-feature-souvenir::before {
-  content: "";
-  position: absolute;
   top: 55px;
-  left: 50%;
 
   width: 64px;
   height: 76px;
 
   background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  transform: translateX(-50%);
 }
 
 .search-hotel {

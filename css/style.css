@@ -61,7 +61,7 @@ a {
 .site-navigation {
   display: flex;
   margin: 0;
-  padding: 14px 72px 14px;
+  padding: 15px 72px 15px;
 
   list-style: none;
 }
@@ -128,7 +128,7 @@ a {
   justify-content: center;
   width: 400px;
   margin: 0;
-  margin-left: 80px;
+  margin-left: 82px;
   padding: 0;
 
   list-style: none;
@@ -210,8 +210,8 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 58px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 76px;
+  padding-bottom: 72px;
 
   background-color: #e3f0f8;
   background-image: url("../img/background_photo.jpg");
@@ -326,7 +326,6 @@ a {
   padding-top: 160px;
 }
 
-.town-feature-housing::before {
 .town-feature[class*="town-feature-"]::before{
   content: "";
   position: absolute;
@@ -475,6 +474,7 @@ a {
 
 .search-date input {
   min-width: 346px;
+  padding-right: 39px;
 }
 
 .search-calendar {
@@ -701,10 +701,14 @@ a {
   cursor: pointer;
 }
 
-.filter-price .min-price,
-.filter-price .max-price {
+.filter-price .min-price {
   width: 92px;
   padding-left: 64px;
+}
+
+.filter-price .max-price {
+  width:102px;
+  padding-left:54px;
 }
 
 .filter-price input {
@@ -764,8 +768,8 @@ a {
 
 .filter-btn {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 85px;
+  padding: 6px 33px;
 
   line-height: 21px;
   color: #ffffff;
@@ -847,7 +851,7 @@ a {
 }
 
 .sort-btn {
-  margin-left: 12px;
+  margin-left: 9px;
   padding: 0;
 
   background: transparent;
@@ -880,7 +884,7 @@ a {
 
 .list-item {
   display: flex;
-  padding: 25px 72px;
+  padding: 25px 72px 24px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -992,6 +996,8 @@ a {
   display: inline-block;
   width: 18px;
   height: 17px;
+  margin-left: 2px;
+  margin-top: 3px;
 
   background: url("../img/star.svg") no-repeat center;
 }

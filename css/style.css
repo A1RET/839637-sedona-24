@@ -461,27 +461,51 @@ a {
   background-color: #503e33;
 }
 
-@-webkit-keyframes popup-open {
+@-webkit-keyframes form-open {
   0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
   }
 
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(0%) scaleY(1);
+            transform: translateY(0%) scaleY(1);
   }
 }
 
-@keyframes popup-open {
+@keyframes form-open {
   0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
   }
 
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(0%) scaleY(1);
+            transform: translateY(0%) scaleY(1);
+  }
+}
+
+@-webkit-keyframes form-close {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(1);
+            transform: translateY(0%) scaleY(1);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+}
+
+@keyframes form-close {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(1);
+            transform: translateY(0%) scaleY(1);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
   }
 }
 
@@ -528,9 +552,14 @@ a {
   display: block;
 }
 
-.search-form-show {
-  -webkit-animation: popup-open 0.5s;
-          animation: popup-open 0.5s;
+.search-form-open {
+  -webkit-animation: form-open 0.5s;
+          animation: form-open 0.5s;
+}
+
+.search-form-close {
+  -webkit-animation: form-close 0.5s;
+          animation: form-close 0.5s;
 }
 
 .search-form input {

@@ -103,43 +103,45 @@
             <a class="popup-button" href="#">Поиск гостиницы в Седоне</a>
           </div>
 
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="search-date">
-              <label for="date-in">Дата заезда:</label>
-              <input class="date-field" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
-              <button class="search-calendar" type="button">
-                <span class="visually-hidden">Показать календарь</span>
-              </button>
-            </div>
-            <div class="search-date">
-              <label for="date-out">Дата выезда:</label>
-              <input class="date-field" type="text" name="date-out" id="date-out" placeholder="4 июля 2017">
-              <button class="search-calendar" type="button">
-                <span class="visually-hidden">Показать календарь</span>
-              </button>
-            </div>
+          <div class="popup">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <div class="search-date">
+                <label for="date-in">Дата заезда:</label>
+                <input class="date-field" type="text" name="date-in" id="date-in" placeholder="24 апреля 2017" required>
+                <button class="search-calendar" type="button">
+                  <span class="visually-hidden">Показать календарь</span>
+                </button>
+              </div>
+              <div class="search-date">
+                <label for="date-out">Дата выезда:</label>
+                <input class="date-field" type="text" name="date-out" id="date-out" placeholder="4 июля 2017" required>
+                <button class="search-calendar" type="button">
+                  <span class="visually-hidden">Показать календарь</span>
+                </button>
+              </div>
 
-            <div class="search-people-container">
-              <div  class="search-people-amount">
-                <label for="adults-amount">Взрослые:</label>
-                <div class="adults-amount">
-                  <button class="amount-btn" type="button" aria-label="Убрать одного взрослого">-</button>
-                  <input type="text" name="adults-amount" id="adults-amount" value="2">
-                  <button class="amount-btn" type="button" aria-label="Добавить одного взрослого">+</button>
+              <div class="search-people-container">
+                <div  class="search-people-amount">
+                  <label for="adults-amount">Взрослые:</label>
+                  <div class="adults-amount">
+                    <button class="amount-btn" type="button" aria-label="Убрать одного взрослого">-</button>
+                    <input name="adults-amount" id="adults-amount" value="2" required>
+                    <button class="amount-btn" type="button" aria-label="Добавить одного взрослого">+</button>
+                  </div>
+                </div>
+                <div  class="search-people-amount">
+                  <label class="children-title" for="children-amount">Дети:</label>
+                  <div class="children-amount">
+                    <button class="amount-btn" type="button" aria-label="Убрать одного ребёнка">-</button>
+                    <input type="text" name="children-amount" id="children-amount" value="0">
+                    <button class="amount-btn" type="button" aria-label="Добавить одного ребёнка">+</button>
+                  </div>
                 </div>
               </div>
-              <div  class="search-people-amount">
-                <label class="children-title" for="children-amount">Дети:</label>
-                <div class="children-amount">
-                  <button class="amount-btn" type="button" aria-label="Убрать одного ребёнка">-</button>
-                  <input type="text" name="children-amount" id="children-amount" value="0">
-                  <button class="amount-btn" type="button" aria-label="Добавить одного ребёнка">+</button>
-                </div>
-              </div>
-            </div>
 
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
+          </div>
 
         </section>
 
@@ -181,5 +183,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

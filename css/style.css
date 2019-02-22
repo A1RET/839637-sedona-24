@@ -461,13 +461,47 @@ a {
   background-color: #503e33;
 }
 
-.search-form {
+@-webkit-keyframes popup-open {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes popup-open {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.popup {
   position: absolute;
   bottom: 0;
   left: 50%;
   z-index: 1;
-  /*display: none;*/
 
+  display: none;
+  padding: 10px;
+  padding-top: 0;
+  overflow: hidden;
+
+  -webkit-transform: translateX(-50%) translateY(100%);
+      -ms-transform: translateX(-50%) translateY(100%);
+          transform: translateX(-50%) translateY(100%);
+}
+
+.search-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,9 +522,15 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  -webkit-transform: translateX(-50%) translateY(100%);
-      -ms-transform: translateX(-50%) translateY(100%);
-          transform: translateX(-50%) translateY(100%);
+}
+
+.popup-show {
+  display: block;
+}
+
+.search-form-show {
+  -webkit-animation: popup-open 0.5s;
+          animation: popup-open 0.5s;
 }
 
 .search-form input {
@@ -652,10 +692,12 @@ a {
 
 .map {
   position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .map iframe {
   position: absolute;
   top: 0;

@@ -515,7 +515,6 @@ a {
   left: 50%;
   z-index: 1;
 
-  display: none;
   padding: 10px;
   padding-top: 0;
   overflow: hidden;
@@ -548,8 +547,8 @@ a {
           box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
-.popup-show {
-  display: block;
+.popup-hide {
+  display: none;
 }
 
 .search-form-open {

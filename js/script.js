@@ -9,7 +9,7 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   form.classList.toggle("search-form-open");
   form.classList.toggle("search-form-close");
-  if(popup.classList.contains('popup-hide')) {
+  if(popup.classList.contains("popup-hide")) {
     popup.classList.toggle("popup-hide");
   } else {
     setTimeout(function() {popup.classList.toggle("popup-hide")},500);

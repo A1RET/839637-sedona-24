@@ -164,15 +164,15 @@ a {
 }
 
 .sm-tw {
-  background-image: url(../img/t-icon.svg);
+  background-image: url("../img/t-icon.svg");
 }
 
 .sm-fb {
-  background-image: url(../img/fb-icon.svg);
+  background-image: url("../img/fb-icon.svg");
 }
 
 .sm-yt {
-  background-image: url(../img/youtube-icon.svg);
+  background-image: url("../img/youtube-icon.svg");
 }
 
 .sm-button:hover,

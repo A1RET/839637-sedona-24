@@ -351,8 +351,6 @@ a {
 }
 
 .town-features {
-  height: 330px;
-
   background-color: #ffffff;
 }
 
@@ -360,6 +358,7 @@ a {
   position: relative;
 
   padding-top: 160px;
+  padding-bottom: 62px;
 }
 
 .town-feature[class*="town-feature-"]::before {

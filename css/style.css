@@ -1121,16 +1121,14 @@ a {
 }
 
 .list-item-buttons a {
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 17px;
 
   font-weight: bold;
   color: #ffffff;
 }
 
 .list-item-buttons .more {
-  width: 110px;
-  margin-right: 6px;
+  margin-right: 5px;
 
   text-align: center;
 
@@ -1149,8 +1147,6 @@ a {
 }
 
 .list-item-buttons .book {
-  width: 142px;
-
   text-align: center;
 
   background-color: #766357;
